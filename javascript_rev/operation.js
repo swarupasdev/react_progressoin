@@ -2,6 +2,14 @@
 // JAVASCRIPT OPERATORS DEMONSTRATION
 // ============================================
 
+
+// 0. STRING CONFUSION
+console.log("=== STRING CONCATINATION ===")
+console.log("1" + 2 + 2)
+console.log(1 + "2")
+console.log("2" + 1)
+console.log(1 + 2 + "2")
+
 // 1. ARITHMETIC OPERATORS
 console.log("=== ARITHMETIC OPERATORS ===");
 let a = 10;
