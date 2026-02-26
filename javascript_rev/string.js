@@ -9,3 +9,7 @@ console.log(gamename)
 console.log(gamename.__proto__)
 
 console.log(gamename.length)
+console.log(gamename.charAt(2))
+console.log(gamename.indexOf("t"))
+
+const newString=gameName.substring(0,4)
