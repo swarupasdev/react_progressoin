@@ -17,3 +17,5 @@ const newString = gamename.substring(0, 4) // no negative valu
 const anotherString = gamename.slice(-6, 3)
 console.log(newString); 
 console.log(anotherString)
+const newStringone = "   swarup   "
+console.log(newStringone.trim())
