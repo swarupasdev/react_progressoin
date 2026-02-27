@@ -17,5 +17,6 @@ const newString = gamename.substring(0, 4) // no negative valu
 const anotherString = gamename.slice(-6, 3)
 console.log(newString); 
 console.log(anotherString)
-const newStringone = "   swarup   "
+const newStringone = "   swarup u can die  "
 console.log(newStringone.trim())
+console.log(newStringone.split(" "))//separator,limit
