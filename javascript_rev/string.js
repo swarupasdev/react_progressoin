@@ -11,5 +11,9 @@ console.log(gamename.__proto__)
 console.log(gamename.length)
 console.log(gamename.charAt(2))
 console.log(gamename.indexOf("t"))
-
-const newString=gameName.substring(0,4)
+console.log(gamename.__proto__)
+console.log(gamename.toUpperCase())
+const newString = gamename.substring(0, 4) // no negative valu
+const anotherString = gamename.slice(-6, 3)
+console.log(newString); 
+console.log(anotherString)
