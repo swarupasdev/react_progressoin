@@ -27,3 +27,11 @@ let twoDate = new Date(2002, 8 , 12)
 
 let differenceDate = twoDate - oneDate
 console.log(differenceDate)
+
+//const anotherDate = new Date()
+//anotherDate.toLocalString('default', {
+    //weekday: "long"
+//})
+
+//console.log(anotherDate)
+
