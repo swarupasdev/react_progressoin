@@ -14,6 +14,7 @@ let user1 = {
 let user2=user1
 console.log(user1)
 
+//     stack                          heap
 
 //     user2
 //   ---------------        _________________________
