@@ -30,8 +30,7 @@ console.log(differenceDate)
 
 //const anotherDate = new Date()
 //anotherDate.toLocalString('default', {
-    //weekday: "long"
+//weekday: "long"
 //})
 
 //console.log(anotherDate)
-
