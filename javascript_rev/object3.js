@@ -7,9 +7,20 @@ const course = {
 
 // course.cInstructor
 
-const { cInstructor: Instructure } = course   // you're changing a value inside an object 
+const { cInstructor: Instructure } = course   // you're changing a value inside an object destructuring of object
 
 //console.log(cInstructor)
 console.log(Instructure)
 
-const navbar =()
+//api
+//{
+//    "name": "swarup",
+//    "cName": "js in eng",
+//    "price": "free"
+//}
+
+//[
+//    {},
+//    {},
+//    {}
+//]
