@@ -1,8 +1,8 @@
 # project related to dom
 
 ##project link
-[click here]
-
+[Quiz App]https://github.com/swarupasdev/react_progressoin/tree/main/MiniProjects/Quiz-App
+[Smart Expense Tracker]https://github.com/swarupasdev/react_progressoin/tree/main/MiniProjects/smart-expense-tracker
 # solution code
 
 ##Project 1
