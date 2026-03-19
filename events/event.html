@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Events</title>
+</head>
+<body style="background-color:rgba(131, 53, 27, 0.856); color:aliceblue">
+<h2>Amazing image</h2>
+<div>
+    <ul id="images">
+        <li><img width="200px" id="anatomy" src="../events/Anatomy.jpeg" alt="anatomy" ></li>
+    </ul>
+    </div>
+</body>
+<script>
+    // document.getElementById('anatomy').addEventListener('click',function(){
+
+    //     alert("anatomy clicked again")
+    //         // attachEvent()
+
+    // })
+
+    //     document.getElementById('anatomy').addEventListener('click',function(e){
+
+    //     console.log("anatomy clicked")
+    //         // Event propagation  : Event propagation defines how an event moves through the DOM when triggered.
+
+    // },false)
+    // //type, timestamp, preventDefault
+    // //target , toElement, srcElement, currentTarget
+    // //clientX, clientY, screenX, screenY
+    // //altkey, ctrlkey, shiftkey, keyCode
+
+
+    // //eventCapturing : Event travels from root (document) to target element.
+    // //eventBubbling  : Event moves from target back to ancestors.
+    
+
+    document.querySelector('#images').addEventListener
+    ('click',function(e){                               //removing the pic on click
+            console.log(e.target.parentNode)
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+
+    })
+    </script>
+</html>
