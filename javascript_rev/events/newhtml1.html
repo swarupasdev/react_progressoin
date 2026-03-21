@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mad Mecha Labs with Swarup</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const callSwarup= function callName(name){
+        console.log("Swarup is the professor")
+    }
+    const changeText = function(){document.querySelector('h1').innerHTML="Swarup with Mad Mecha Labs"}
+    setTimeout(changeText,4000)
+
+    const changeTime=setTimeout(callSwarup,4000)  //after 2 sec it will print once 
+
+    //clearTimeout(chnageMe)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+
+        clearTimeout(changeTime)
+        console.log("Stopped")
+    })
+</script>
+</html>

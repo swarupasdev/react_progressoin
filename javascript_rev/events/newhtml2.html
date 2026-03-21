@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Mad Mech Labs with Swarup</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+
+</body>
+<script>
+
+    // setInterval(function(){
+    //     console.log("Swarup",Date.now())  //it will keep printing swarup without stopping______________________()
+    // },1000)
+
+    // const stopMe = function(str){
+    //     console.log(str,Date.now())
+    // }
+
+    // const stopInterval  = setInterval(stopMe,1000,"Swarup")_______()
+
+    // clearInterval(stopInterval)  //it will clear the print_____() statement totally 
+    //<------for setInterval and clearInterval with start and stop button------>
+    
+    let startInterval    
+
+    const startPrint= function(str){
+
+        console.log(str,Date.now())
+        
+    }
+
+    document.getElementById("start").onclick= function(){
+
+    startInterval = setInterval(startPrint,1000,"Swarup")
+        
+    }
+
+    document.getElementById("stop").onclick= function(){
+
+    clearInterval(startInterval)
+
+    }
+
+</script>
+</html>
