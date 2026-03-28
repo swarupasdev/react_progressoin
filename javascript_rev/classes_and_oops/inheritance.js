@@ -27,9 +27,11 @@ class Teacher extends user{
 
 }
 
-const grim =  new Teacher("Swarup","sanswarup@gmail.com",95468)
+const company =  new Teacher("Swarup","sanswarup@gmail.com",95468)
 
-grim.addCourse()
-const grimsage=new user("grimsage")
+company.addCourse()
+const newCompany=new user("grimsage")
 
-grimsage.addCourse
+newCompany.logme()
+
+console.log(company instanceof Teacher)
