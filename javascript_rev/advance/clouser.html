@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+     function makefunc(){
+         const name='Swarup'  //declared some random string
+         function displayName(){     //printing name 
+             console.log(name)       //name is outside of the scope of this function
+         }
+         return displayName
+     }
+    const newfunc=makefunc()
+    myfunc()      //main function called
+
+    // function outer(){
+    //     let username="San"
+    //     function inner(){
+    //         console.log("1st time",username)
+    //     }
+    //     inner()
+    // }
+    // outer()
+    // console.log("2nd time",username)
+
+</script>
+</html> 
