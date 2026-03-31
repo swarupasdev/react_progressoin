@@ -1,6 +1,6 @@
 # All about react and javascript
 ## JavaScript
-### File: [variables_.js](.../variables_.js)
+### File: [variables_.js](javascript_rev/variables_.js)
 #### Things for you to understand :
 There are 3 types of varibale declaration
 1.Let:
