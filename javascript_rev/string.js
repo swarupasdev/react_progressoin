@@ -6,7 +6,7 @@ const gamename = new String('Cricket')
 //new keyword is for creating a object
 
 console.log(gamename)
-console.log(gamename.__proto__)
+console.log(gamename.__proto__) //js object has a hidden link to other object called its prototype
 
 console.log(gamename.length)
 console.log(gamename.charAt(2))
