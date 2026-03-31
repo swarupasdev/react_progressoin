@@ -25,7 +25,36 @@ because JS does temporary wrapping
 now what is temporary wrapping : it is the behaviour if java script behind the scene .
 ``` If you write like:
 let name = "Swarup"
-console.log("The",typeof name)  // the output will be string
+console.log(typeof name)  //string
+```
+what JS is doing here is reserving a memory space inside the memory of computer , it starts reading line by line then it wll see "Swarup" is assigned to name , now the "Swarup" will take place as a primitive string here.
+###### typeof is an operator here 
+it will see what type of assigned value is "Swarup" . Then it will return String
 
+``` if you write like :
+let name = "Swarup"
+name.toUpperCase()
+console.log(typeof (name.toUpperCase()))  //String
+```
+what JS is doing here is creating a temporary object 
+```
+new String("Swarup").toUpperCase()  //behind the scene 
+```
+after using the methid it deletes the object and returns the output
+###### primitive assigned value ---> wrapper ---> method used ---> wrapper destroyed
 
-
+```
+let str = "Swarup";
+let objStr = new String(str)
+console.log(typeof objStr)  // Object
+```
+now this is a real object different from temporary 
+inside work:
+```
+objStr = {
+  [[PrimitiveValue]]: "Swarup",
+  __proto__: String.prototype
+}
+```
+new String() = you are manually creating a wrapper object that permanently holds the string
+###### Now __proto__ and prototype
