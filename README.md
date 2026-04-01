@@ -58,6 +58,7 @@ objStr = {
 ```
 new String() = you are manually creating a wrapper object that permanently holds the string
 ###### Now __proto__ and prototype
+<<<<<<< HEAD
 __proto__ is a property. Every object carries an internal pointer. __proto__ is that pointer to another object . Javascript needs to reuse the code. What i mean by reuse is : for good memory management and fast execution JS keeps one copy of a function and let all the object share it instead of copying the same function into every object 
 
 ```use case 1:
@@ -75,3 +76,5 @@ JS is looks inside " user ". It wont find anything. Because you asked for a spec
 Now it will go to user.__proto__
 before that you need to know javascript has a runtime engine like node runtime or v8 engine written in c++. What i am writing here is basically the thing goes inside those engines . You can not see these things on your IDE. so ``` __proto__``` is the name we use to access the ```[[prototype]]``` inside these engines.
 
+=======
+>>>>>>> 1516a45eeb002f3a7d84009fe587fafc3b303777
