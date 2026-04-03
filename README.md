@@ -1,5 +1,5 @@
 # All about react and javascript
-## JavaScript
+## [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 ### File: [variables_.js](javascript_rev/variables_.js)
 #### Things for you to understand :
 There are 3 types of varibale declaration
@@ -84,3 +84,6 @@ user.__proto__-->Object.prototype
 simply ```user``` has ```name ``` so ```user.name``` works directly but ```user``` do not have ```toString``` so JS uses ```__proto__``` 
 
 =======
+## [React](https://react.dev/learn)
+### File: [01react_basics](react_basics/01react_basics/)
+#### Things for you to understand :
