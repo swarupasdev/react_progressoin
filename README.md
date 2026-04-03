@@ -75,4 +75,12 @@ JS is looks inside " user ". It wont find anything. Because you asked for a spec
 Now it will go to user.```__proto__```
 before that you need to know javascript has a runtime engine like node runtime or v8 engine written in c++. What i am writing here is basically the thing goes inside those engines . You can not see these things on your IDE. so ``` __proto__``` is the name we use to access the ```[[prototype]]``` inside these engines.
 
+```so now 
+
+user.__proto__-->Object.prototype
+
+```
+```toString``` exists. Now execute it.  
+simply ```user``` has ```name ``` so ```user.name``` works directly but ```user``` do not have ```toString``` so JS uses ```__proto__``` 
+
 =======
