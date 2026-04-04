@@ -87,3 +87,12 @@ simply ```user``` has ```name ``` so ```user.name``` works directly but ```user`
 ## [React](https://react.dev/learn)
 ### File: [01react_basics](react_basics/01react_basics/)
 #### Things for you to understand : 
+1. [package.json](/react_basics/01react_basics/package.json)
+This contains list dependancies and instructions
+
+2. [package-lock.json](/react_basics/01react_basics/package-lock.json)
+Stores Exact versions, dependancy tree, download urls, security hash
+
+3. [index.html](/react_basics/01react_basics/index.html)
+Browser understands only HTML,CSS,JS
+React is just a library of javascript. Thus it needs an HTML entry point to attach itself 
