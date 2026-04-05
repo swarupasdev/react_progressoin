@@ -93,6 +93,14 @@ This contains list dependancies and instructions
 2. [package-lock.json](/react_basics/01react_basics/package-lock.json)
 Stores Exact versions, dependancy tree, download urls, security hash
 
-3. [index.html](/react_basics/01react_basics/index.html)
+3. [index.html](/react_basics/01react_basics/public/index.html)
 Browser understands only HTML,CSS,JS
-React is just a library of javascript. Thus it needs an HTML entry point to attach itself 
+React is just a library of javascript. Thus it needs an HTML entry point to attach itself.
+```<div id="root"></div>``` provides a container. It is empty and it is a placeholder. An empty HTML element where React injects your UI
+It reacts with [index.js](/react_basics/01react_basics/src/index.js)
+
+4. [index.js](/react_basics/01react_basics/src/index.js)
+connects HTML ```index.html``` and React ```App.js```
+
+5. [App.js](/react_basics/01react_basics/src/App.js)
+this is what you seee in browser
