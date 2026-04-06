@@ -1,7 +1,10 @@
+import Any from "./Any.js";
 function App() {
   return (
-    <h1>Swarup's App</h1>
-  )
+    <>
+    <Any/>
+    </>
+  );
 }
 
 export default App;
