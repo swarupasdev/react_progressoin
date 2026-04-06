@@ -95,12 +95,20 @@ Stores Exact versions, dependancy tree, download urls, security hash
 
 3. [index.html](/react_basics/01react_basics/public/index.html)
 Browser understands only HTML,CSS,JS
-React is just a library of javascript. Thus it needs an HTML entry point to attach itself.
+React is just a library of javascript. Thus it needs an HTML entry point to attach itself. It is also called SPA(single Page Application).
 ```<div id="root"></div>``` provides a container. It is empty and it is a placeholder. An empty HTML element where React injects your UI
 It reacts with [index.js](/react_basics/01react_basics/src/index.js)
 
 4. [index.js](/react_basics/01react_basics/src/index.js)
-connects HTML ```index.html``` and React ```App.js```
+connects HTML ```index.html``` and React ```App.js```.
+```ReactDom```Website has its own dom but react creates its own virtual dom and compare it with browsers dom to compare the chnages and use it to manipulate object models . 
+It has a method ```createRoot```.To acces the root ```document.getElementById('root')```. 
+[<div id="root"> </div>](/react_basics/01react_basics/public/index.html) You are accessing this root by running ```document.getElementById('root')``` this script.
+```ReactDOM.createRoot(document.getElementById('root'))``` we stored this refernce inside ```const root```. 
+Now you will give command to root to render it into App. 
 
 5. [App.js](/react_basics/01react_basics/src/App.js)
 this is what you seee in browser
+
+Whatever is done it is done inside the [src](/react_basics/01react_basics/src) and [public](/react_basics/01react_basics/public)
+
