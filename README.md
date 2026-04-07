@@ -73,7 +73,7 @@ let us understand with this code snippet .
 JS is looks inside " user ". It wont find anything. Because you asked for a specific property here ```toString()``` . So it will get ```{name:"Swarup"}```. 
 
 Now it will go to user.```__proto__```
-before that you need to know javascript has a runtime engine like node runtime or v8 engine written in c++. What i am writing here is basically the thing goes inside those engines . You can not see these things on your IDE. so ``` __proto__``` is the name we use to access the ```[[prototype]]``` inside these engines.
+before that you need to know javascript has a runtime engine like node runtime or v8 engine written in c++. What i am writing here is basically the thing goes inside those engines . You can not see these things on your IDE. so ```__proto__``` is the name we use to access the ```[[prototype]]``` inside these engines.
 
 ```so now 
 
@@ -118,9 +118,12 @@ Let us have some knowledge about <mark>DOM nodes</mark>
 <mark>DOM nodes</mark> is a unit the browser uses to represent the web page 
 A <mark>DOM nodes</mark> = one item inside the page structure basically the DOM TREE
 <mark>Example:</mark>
-```<div id="root">
+
+```
+<div id="root">
   <h1>Hello</h1>
-</div>```
+</div>
+```
 
 ###### how browser analyse this :
 ```document(the whole page)-->html-->body-->dive-->h1-->hello```
@@ -130,15 +133,12 @@ Elemental node :
 <div></div>
 <a></a>
 <h1></h1>
-
 ```
-
 Text node : ```hello```
 Document node: 
 ```
 the whole page
 ```
-
 react operates like: 
 ```
 JS object -> DOM element -> render in browser
@@ -153,7 +153,8 @@ In [index.html](/react_basics/customreact/index.html)
 ```
 4. then loads your JS file 
 
-```const reactElement = {
+```
+const reactElement = {
     type: 'a',
     props: {
         href: 'http://google.com',
