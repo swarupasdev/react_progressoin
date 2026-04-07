@@ -125,14 +125,19 @@ A <mark>DOM nodes</mark> = one item inside the page structure basically the DOM 
 ###### how browser analyse this :
 ```document(the whole page)-->html-->body-->dive-->h1-->hello```
 ##### 3 types of dom nodes are here
-Elemental node : ```<div></div>
-                      <a></a>
-                      <h1></h1>```
+Elemental node : 
+```
+<div></div>
+<a></a>
+<h1></h1>
+
+```
 
 Text node : ```hello```
 Document node: ```the whole page```
 
-react operates like ```JS object -> DOM element -> render in browser```
+react operates like 
+```JS object -> DOM element -> render in browser```
 
 In [index.html](/react_basics/customreact/index.html) 
 - Browser is loading the html 
@@ -149,7 +154,9 @@ const reactElement = {
     },
     children:'Click on me to visit google'
 }
-```React creates objects like this internally 
+```
+
+React creates objects like this internally 
 - type: HTML tag
 - props: attributes
 - children: inner content
