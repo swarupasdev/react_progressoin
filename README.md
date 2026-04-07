@@ -112,3 +112,45 @@ this is what you seee in browser
 
 Whatever is done it is done inside the [src](/react_basics/01react_basics/src) and [public](/react_basics/01react_basics/public)
 
+##### [customreact](/react_basics/customreact) Built a Mini react renderer
+###### To understand [this](/react_basics/customreact) you have to understand :
+Let us have some knowledge about <mark>DOM nodes</mark>
+<mark>DOM nodes</mark> is a unit the browser uses to represent the web page 
+A <mark>DOM nodes</mark> = one item inside the page structure basically the DOM TREE
+<mark>Example:</mark>
+```<div id="root">
+  <h1>Hello</h1>
+</div>```
+
+###### how browser analyse this :
+```document(the whole page)-->html-->body-->dive-->h1-->hello```
+##### 3 types of dom nodes are here
+Elemental node : ```<div></div>
+                      <a></a>
+                      <h1></h1>```
+
+Text node : ```hello```
+Document node: ```the whole page```
+
+react operates like ```JS object -> DOM element -> render in browser```
+
+In [index.html](/react_basics/customreact/index.html) 
+- Browser is loading the html 
+- creating the DOM
+- finding ```<div id='root'>```
+- then loads your JS file 
+
+```
+const reactElement = {
+    type: 'a',
+    props: {
+        href: 'http://google.com',
+        target:'_blank'
+    },
+    children:'Click on me to visit google'
+}
+```React creates objects like this internally 
+- type: HTML tag
+- props: attributes
+- children: inner content
+
