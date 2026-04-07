@@ -134,19 +134,26 @@ Elemental node :
 ```
 
 Text node : ```hello```
-Document node: ```the whole page```
+Document node: 
+```
+the whole page
+```
 
-react operates like 
-```JS object -> DOM element -> render in browser```
+react operates like: 
+```
+JS object -> DOM element -> render in browser
+```
 
 In [index.html](/react_basics/customreact/index.html) 
-- Browser is loading the html 
-- creating the DOM
-- finding ```<div id='root'>```
-- then loads your JS file 
-
+1. Browser is loading the html 
+2. creating the DOM
+3. finding 
 ```
-const reactElement = {
+<div id='root'>
+```
+4. then loads your JS file 
+
+```const reactElement = {
     type: 'a',
     props: {
         href: 'http://google.com',
@@ -157,7 +164,7 @@ const reactElement = {
 ```
 
 React creates objects like this internally 
-- type: HTML tag
-- props: attributes
-- children: inner content
+1. type: HTML tag
+2. props: attributes
+3. children: inner content
 
