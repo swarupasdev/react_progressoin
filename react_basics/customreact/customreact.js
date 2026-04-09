@@ -17,12 +17,12 @@ function customRender(reactElement,container){
 }
 
 const reactElement = {
-    type: 'a',
-    props: {
-        href: 'http://google.com',
+    type: 'a',                          //tag name
+    props: {                            //attribute
+        href: 'http://google.com',  
         target:'_blank'
     },
-    children:'Click on me to visit google'
+    children:'Click on me to visit google'      //inner content
 }
 
 const reactContainer=document.querySelector('#root')

@@ -169,3 +169,11 @@ React creates objects like this internally
 2. props: attributes
 3. children: inner content
 
+It is a customized react you have build for understanding the workflow but in original react it is all wrapped up inside. In custom you can chnage these type, props and children but in react the placeholders are inbuilt and fixed .If you will change it it will throw and error.
+
+##### [02newprojects](/react_basics/02newproject) :
+```
+import { useState } from 'react' 
+```
+This ```{useState}``` it is the <mark>hook</mark>
+So what is <mark>Hook</mark>? <mark>Hook</mark> is a special function, featured in react which lets you use differe react features like state, lifecycle, context inside functional components
