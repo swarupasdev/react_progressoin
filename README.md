@@ -85,7 +85,7 @@ simply ```user``` has ```name ``` so ```user.name``` works directly but ```user`
 
 =======
 ## [React](https://react.dev/learn)
-### File: [01react_basics](react_basics/01react_basics/)
+### Folder: [01react_basics](react_basics/01react_basics/)
 #### Things for you to understand : 
 1. [package.json](/react_basics/01react_basics/package.json)
 This contains list dependancies and instructions
@@ -112,7 +112,8 @@ this is what you seee in browser
 
 Whatever is done it is done inside the [src](/react_basics/01react_basics/src) and [public](/react_basics/01react_basics/public)
 
-##### [customreact](/react_basics/customreact) Built a Mini react renderer
+### Folder: [customreact](/react_basics/customreact) 
+Built a Mini react renderer
 ###### To understand [this](/react_basics/customreact) you have to understand :
 Let us have some knowledge about <mark>DOM nodes</mark>
 <mark>DOM nodes</mark> is a unit the browser uses to represent the web page 
@@ -171,7 +172,7 @@ React creates objects like this internally
 
 It is a customized react you have build for understanding the workflow but in original react it is all wrapped up inside. In custom you can chnage these type, props and children but in react the placeholders are inbuilt and fixed .If you will change it it will throw and error.
 
-##### [02newprojects](/react_basics/02newproject)
+### [02newprojects](/react_basics/02newproject)
 ```
 import { useState } from 'react' 
 ```
