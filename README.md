@@ -178,3 +178,13 @@ import { useState } from 'react'
 ```
 This ```{useState}``` it is the <mark>hook</mark>
 So what is <mark>Hook</mark>? <mark>Hook</mark> is a special function, featured in react which lets you use differe react features like state, lifecycle, context inside functional components
+
+
+##### Interview important and deeper understanding
+- virtual dom
+React creates its own DOM which is known as virtual DOM
+two types old one and new one 
+In normal DOM browser reacts like 
+<mark color='green'>Change state -> fully reload of DOM -> full repaint</mark>
+In virtual DOM
+<mark color='green'>Chnages of tracks -> only the chnaged part updates</mark>
