@@ -185,6 +185,12 @@ So what is <mark>Hook</mark>? <mark>Hook</mark> is a special function, featured 
 React creates its own DOM which is known as virtual DOM
 two types old one and new one 
 In normal DOM browser reacts like 
-<mark color='green'>Change state -> fully reload of DOM -> full repaint</mark>
+```<mark>Change state -> fully reload of DOM -> full repaint</mark>```
 In virtual DOM
-<mark color='green'>Chnages of tracks -> only the chnaged part updates</mark>
+```<mark>Chnages of tracks -> only the chnaged part updates</mark>```
+If 3 different people are developing the same UI then you have to update the UI 3 different time.
+
+but skiping immedeate updates and apply them at final stage is more effective 
+
+This is your react fiber an algorithm to make the all changes at the final stage ,an algorithm to manage the efficiency of UI updates
+
