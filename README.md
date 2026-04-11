@@ -187,10 +187,30 @@ two types old one and new one
 In normal DOM browser reacts like 
 ```<mark>Change state -> fully reload of DOM -> full repaint</mark>```
 In virtual DOM
-```<mark>Chnages of tracks -> only the chnaged part updates</mark>```
+```<mark>Chnages of tracks -> only the chnaged part updates</mark>```  means system will indentify what exactly changed and it will update only that specific part of the DOM
+
 If 3 different people are developing the same UI then you have to update the UI 3 different time.
 
 but skiping immedeate updates and apply them at final stage is more effective 
 
-This is your react fiber an algorithm to make the all changes at the final stage ,an algorithm to manage the efficiency of UI updates
+This is your react fiber an algorithm to make the all changes at the final stage ,an algorithm to manage the efficiency of UI updates. React ensures only necessary updates should be happen.
+
+###### React Fiber abilities:
+- Work pauses
+- work resumes
+- cancels unnecesary work
+- Assigns priorities to updates finally 
+
+###### Reconciliation:
+It is also another React algo to compare 2 trees helps cross check the Old Virtual DOM and New virtual DOM because to identify the particular changes cross check between old and new one is inevitable.
+
+There is a method ```setState()``` it triggers the update and does re-render. Reconiliation works behind VIRTUAL DOM
+
+Fiber internals are very conceptual more like architecture level things so you can dig deep by your own.
+
+###### How react updates the ui through all this?
+<mark> setState -> schedule update -> fiber decides -> DOM updates</mark>
+
+
+
 
