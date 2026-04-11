@@ -112,9 +112,11 @@ this is what you seee in browser
 
 Whatever is done it is done inside the [src](/react_basics/01react_basics/src) and [public](/react_basics/01react_basics/public)
 
-### Folder: [customreact](/react_basics/customreact) 
-Built a Mini react renderer
-###### To understand [this](/react_basics/customreact) you have to understand :
+### Folder: [customreact](/react_basics/customreact)
+#### Things for you to understand : 
+
+<mark>Built a Mini react renderer</mark>
+
 Let us have some knowledge about <mark>DOM nodes</mark>
 <mark>DOM nodes</mark> is a unit the browser uses to represent the web page 
 A <mark>DOM nodes</mark> = one item inside the page structure basically the DOM TREE
@@ -173,6 +175,8 @@ React creates objects like this internally
 It is a customized react you have build for understanding the workflow but in original react it is all wrapped up inside. In custom you can chnage these type, props and children but in react the placeholders are inbuilt and fixed .If you will change it it will throw and error.
 
 ### [02newprojects](/react_basics/02newproject)
+#### Things for you to understand : 
+
 ```
 import { useState } from 'react' 
 ```
@@ -210,6 +214,15 @@ Fiber internals are very conceptual more like architecture level things so you c
 
 ###### How react updates the ui through all this?
 <mark> setState -> schedule update -> fiber decides -> DOM updates</mark>
+
+### [03tailwindprops](/react_basics/03tailwindprops)
+#### Things for you to understand : 
+
+Tailwind css: Makes things look great and fast
+Utility first CSS framework for building custom designs by composing classes directly in your mark up
+Props: Making our react components smart and reusable
+
+
 
 
 
