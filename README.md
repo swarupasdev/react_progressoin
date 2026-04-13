@@ -221,6 +221,7 @@ Fiber internals are very conceptual more like architecture level things so you c
 Tailwind css: Makes things look great and fast
 Utility first CSS framework for building custom designs by composing classes directly in your mark up
 Props: Making our react components smart and reusable
+Takes data from parents to children component 
 
 
 
