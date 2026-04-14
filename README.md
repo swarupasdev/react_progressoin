@@ -224,14 +224,27 @@ Props: Making our react components smart and reusable
 Takes data from parents to children component 
 
 
-### [SMART NOTE APP](/react_basics/smart-note-app/)
+### [BACK-GROUND CHANGER](/react_basics/background-changer)
+
+#### WE ARE BUILDING:
+- A simple background changer
+- click the button and it will change the background as the            corresponding color written on the button
+
+#### WHAT WE ARE DEMONSTRATING THROUGH IT :
+- Use of callback function on ```onClick{}```
+- Use of ```style{{}}``` in ```<div></div>```
+- Use of minor tailwind css properties inside JSX
+
+### [SMART NOTE APP](/react_basics/smart-note-app)
+
 #### WE ARE BUILDING:
 - Add notes
 - Auto-focus input
 - SaveNotes in browser
 - Delete notes
 - Avoid unnecessary re-renders
-#### WHAT WE ARE STUDYING THROUGH IT :
+
+#### WHAT WE ARE DEMONSTRAITING THROUGH IT :
 - Input focus control -> ```useRef```
 - Local storage, life cycle -> ```useEffect```
 - function optimization ->```useCallback```
