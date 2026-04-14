@@ -224,6 +224,17 @@ Props: Making our react components smart and reusable
 Takes data from parents to children component 
 
 
+### [SMART NOTE APP](/react_basics/smart-note-app/)
+#### WE ARE BUILDING:
+- Add notes
+- Auto-focus input
+- SaveNotes in browser
+- Delete notes
+- Avoid unnecessary re-renders
+#### WHAT WE ARE STUDYING THROUGH IT :
+- Input focus control -> ```useRef```
+- Local storage, life cycle -> ```useEffect```
+- function optimization ->```useCallback```
 
 
 
