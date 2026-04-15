@@ -250,6 +250,8 @@ Takes data from parents to children component
 - function optimization ->```useCallback```
 
 
-```useState``` returns an array with the current state and a function to update it. We use array destructuring to assign them to variables. The initial value defines the type of state.
+- ```useState``` returns an array with the current state and a function to update it. 
+- We use array destructuring to assign them to variables. The initial value defines the type of state.
 
-
+- ```useRef``` returns a mutable object with a ```.current``` property that persists across renders. 
+- It is mainly used to access DOM elements or store values without triggering re-renders.

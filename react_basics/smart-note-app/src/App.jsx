@@ -4,10 +4,10 @@ function App() {
   const [notes, setNotes] = useState([])
   const [input, setInput] = useState("")
 
-  // 🔹 useRef → access DOM directly
+  //  useRef = access DOM directly
   const inputRef = useRef(null)
 
-  // 🔹 useEffect → run on mount (load notes)
+  //  useEffect = run on mount (load notes)
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem("notes"))
     if (saved) setNotes(saved)
@@ -16,7 +16,7 @@ function App() {
     inputRef.current.focus()
   }, [])
 
-  // 🔹 useEffect → run when notes change
+  // 🔹 useEffect = run when notes change
   useEffect(() => {
     localStorage.setItem("notes", JSON.stringify(notes))
   }, [notes])
@@ -43,7 +43,7 @@ function App() {
           ref={inputRef}   // 🔹 useRef here
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          className="p-2 rounded text-black w-full"
+          className="p-2 rounded text-amber w-full"
           placeholder="Write note..."
         />
         <button
