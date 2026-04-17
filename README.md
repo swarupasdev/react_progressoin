@@ -255,3 +255,4 @@ Takes data from parents to children component
 
 - ```useRef``` returns a mutable object with a ```.current``` property that persists across renders. 
 - It is mainly used to access DOM elements or store values without triggering re-renders.
+  
