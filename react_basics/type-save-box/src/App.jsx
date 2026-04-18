@@ -12,8 +12,8 @@ function App() {
   useEffect(() => {
     const stored = localStorage.getItem("myText")
     if (stored) setSavedText(stored)
-
-    // focus input when page loads
+      
+    //focus input when page loads
     inputRef.current.focus()
   }, [])
 

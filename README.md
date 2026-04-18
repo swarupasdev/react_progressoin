@@ -292,3 +292,9 @@ Each ```useState()``` creates a different piece of reactive memory, and the arra
 
 ##### [(useRef())](./react_basics/type-save-box/src/App.jsx) part:
 - creates a reference object that can give access to a specific DOM element and direct interaction with it without triggering re-render
+
+##### [(useEffect())](./react_basics/type-save-box/src/App.jsx) part:
+- After the loading of those components , get the saved text from the browser and focus the input field 
+- In react UI will render first , the all other side effects will run ,so in this useEffect part it reads from the localStorage then focus upon DOM.
+- In react useEffect() uses an arrow function as its parameter . It helps using callback function feature.
+- Then it reads data from the storage of browser. If it is there then it will store it to setsavedtext and it will update the state
