@@ -255,4 +255,40 @@ Takes data from parents to children component
 
 - ```useRef``` returns a mutable object with a ```.current``` property that persists across renders. 
 - It is mainly used to access DOM elements or store values without triggering re-renders.
-  
+
+
+### [Type and Save Box](/react_basics/type-save-box)
+
+#### WE ARE BUILDING:
+
+
+#### WHAT WE ARE DEMONSTRAITING THROUGH IT :
+##### [function App(){}](./react_basics/type-save-box/src/App.jsx) part :
+- First ```function App(){}``` means the App is a function that will return the UI. Everything works inside the function because React treats UI as a function of Data.
+
+- In react function is used but we are not using any normal codes because to maintain a uniform speed and consistency in immediate reflection in UI while editing in the code . Function can rerun  easily but calling individual codes again and again is bit pissing work and inefficient and also it wont re-run easily or update dynamically or frequent state control.
+
+- so in short components are function which returns the JSX . React calls these functions to render the UI and again calls it back when a state or props change and this makes the UI dynamic and adaptable 
+
+##### [State](./react_basics/type-save-box/src/App.jsx) part :
+- In this part of the program we are seeing 
+```
+  const [text, setText] = useState("")
+  const [savedText, setSavedText] = useState("")
+
+```
+Since we are storing different datas here we are giving 2 states here ,one state is what we are typing currently another state is what we have saved before . we cant use one state only because we would lose the typing value overwrites the saved value .
+
+- It is written as ```[text, setText]``` because it is an <mark>array destructuring</mark>. When a function returns an array like ```[text, setText]``` (a React Hook) ,destructuring lets you capture these values in one line.
+
+- ```[text, setText]``` resembles ["value","function"] You can also write it as 
+``` 
+    const temp = useState("")
+    const text = temp[0]
+    const setText = temp[1]
+
+```
+Each ```useState()``` creates a different piece of reactive memory, and the array destructuring gives you the value and a setter function to update it.
+
+##### [(useRef())](./react_basics/type-save-box/src/App.jsx) part:
+- creates a reference object that can give access to a specific DOM element and direct interaction with it without triggering re-render
