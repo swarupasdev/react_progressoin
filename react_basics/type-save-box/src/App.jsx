@@ -10,10 +10,6 @@ function App() {
 
   //useEffect (1) -> run once (on mount)
   useEffect(() => {
-    const stored = localStorage.getItem("myText")
-    if (stored) setSavedText(stored)
-
-    //focus input when page loads
     inputRef.current.focus()
   }, [])
 

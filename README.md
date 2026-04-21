@@ -293,8 +293,22 @@ Each ```useState()``` creates a different piece of reactive memory, and the arra
 ##### [(useRef())](./react_basics/type-save-box/src/App.jsx) part:
 - creates a reference object that can give access to a specific DOM element and direct interaction with it without triggering re-render
 
-##### [(useEffect())](./react_basics/type-save-box/src/App.jsx) part:
-- After the loading of those components , get the saved text from the browser and focus the input field 
-- In react UI will render first , the all other side effects will run ,so in this useEffect part it reads from the localStorage then focus upon DOM.
+##### [(useEffect()) 1st one](./react_basics/type-save-box/src/App.jsx) part:
+- In react UI will render first , then the all other side effects will run ,so in this useEffect part it reads from the localStorage then focus upon DOM.
 - In react useEffect() uses an arrow function as its parameter . It helps using callback function feature.
-- Then it reads data from the storage of browser. If it is there then it will store it to setsavedtext and it will update the state
+- After UI rendering whatever happens genuinely is your side effects (e.g. cursor moving ,focusing on your rendered UI, saving data etc )
+
+##### [(useEffect()) 2nd one](./react_basics/type-save-box/src/App.jsx) part:
+- When savedText changes, it is saved automatically
+- ```
+       if (savedText) {
+      localStorage.setItem("myText", savedText)
+    }
+
+  ```
+  What's happening in this snippet is , if savedText is not empty then store it to browser localStorage. What you will store is that save ```savedText``` under the key ```"myText"```
+- It means whatever you will click save your savedText will update , then it will store as the key ```"myText"``` which will store to the localStorage
+- ```[savedText]``` is your dependancy array as it will run only when savedText will change
+
+##### [(useCallback())](./react_basics/type-save-box/src/App.jsx) part:
+- Create a stabke version of the handle s
