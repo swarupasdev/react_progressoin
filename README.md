@@ -311,4 +311,4 @@ Each ```useState()``` creates a different piece of reactive memory, and the arra
 - ```[savedText]``` is your dependancy array as it will run only when savedText will change
 
 ##### [(useCallback())](./react_basics/type-save-box/src/App.jsx) part:
-- Create a stabke version of the handle s
+- Create a stable version of the handleSave function 
