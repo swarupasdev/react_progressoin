@@ -1,7 +1,8 @@
 #   AD-OPTIMA
 ##  A full-stack ad optimization platform with authentication, analytics simulation, A/B testing, and AI-driven budget suggestions using React, Redux Toolkit, and Appwrite.
 
-Advertisement Management + Optimization System — Vision, Purpose, and Problem Definition (Compressed)
+### Advertisement Management + Optimization System — Vision, Purpose, and Problem Definition with diagram: 
+###### System Architecture Diagram:
 ![Alternative Text](./additional/System%20Architecture%20Diagram)
 
 1. This project is a system design exercise focused on data-driven decision-making.
