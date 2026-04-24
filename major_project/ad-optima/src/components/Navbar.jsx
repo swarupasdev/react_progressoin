@@ -8,7 +8,7 @@ function Navbar({ title, onMenuClick }) {
                 
       <h2>{title}</h2>
 
-      <div>
+      <div>{/*callback function ,function passed as props*/}
         <button onClick={() => onMenuClick("Home")}>Home</button>
         <button onClick={() => onMenuClick("Login")}>Login</button>
         <button onClick={() => onMenuClick("Signup")}>Signup</button>
