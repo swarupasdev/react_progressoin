@@ -1,4 +1,4 @@
-function Navbar() {
+function Navbar({ title, onMenuClick }) {
   return (  //returns the UI
     //outer{}: JavaScript inner{key: value}: object
     <nav style={{ 
@@ -6,12 +6,12 @@ function Navbar() {
                   justifyContent: "space-between" 
                 }}> 
                 
-      <h2>Ad-Optima</h2>
+      <h2>{title}</h2>
 
       <div>
-        <button>Home</button>
-        <button>Login</button>
-        <button>Signup</button>
+        <button onClick={() => onMenuClick("Home")}>Home</button>
+        <button onClick={() => onMenuClick("Login")}>Login</button>
+        <button onClick={() => onMenuClick("Signup")}>Signup</button>
       </div>
     </nav>
   )
