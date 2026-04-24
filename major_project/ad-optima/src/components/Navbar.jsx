@@ -1,6 +1,11 @@
 function Navbar() {
-  return (
-    <nav style={{ display: "flex", justifyContent: "space-between" }}>
+  return (  //returns the UI
+    //outer{}: JavaScript inner{key: value}: object
+    <nav style={{ 
+                  display: "flex", 
+                  justifyContent: "space-between" 
+                }}> 
+                
       <h2>Ad-Optima</h2>
 
       <div>
