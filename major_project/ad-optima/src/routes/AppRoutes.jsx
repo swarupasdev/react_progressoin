@@ -9,12 +9,12 @@ import Signup from "../pages/Signup"
 
 function AppRoutes() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
+    <BrowserRouter>{/*enables routing using URL*/}
+      <Routes>{/*cotainer for all routes */}
+        <Route path="/" element={<Layout />}> {/*defines one route*/}
           <Route index element={<Home />} />
-          <Route path="login" element={<Login />} />
-          <Route path="signup" element={<Signup />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
         </Route>
       </Routes>
     </BrowserRouter>

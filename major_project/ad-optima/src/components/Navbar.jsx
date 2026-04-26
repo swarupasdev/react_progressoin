@@ -12,7 +12,7 @@ function Navbar({title}) {
       <h2>{title}</h2>
 
       <div style={{display: "flex" , gap:"15px"}}>{/*callback function ,function passed as props*/}
-        <Link to="/">Home</Link>
+        <Link to="/">Home</Link>  {/*Link does event.preventDefault() no full refresh and server req for new HTML*/}
         <Link to="/login">Login</Link>
         <Link to="/signup">Signup</Link>
       </div>

@@ -5,12 +5,9 @@ function Layout(){
     return(
 
         <>
-        
         <Navbar title="Ad-Optima"/>
-        <Outlet/>
-        
+        <Outlet/>  {/*placeholder to render child routes inside a parent layout*/}
         </>
-
 
     )
 }
