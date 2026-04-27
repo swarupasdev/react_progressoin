@@ -1,7 +1,8 @@
-import { createContext, useState } from "react"
+import { createContext, useState } from "react"  //to build a global data channel
+
 
 // eslint-disable-next-line react-refresh/only-export-components
-export const AuthContext = createContext()
+export const AuthContext = createContext()  //Creates and exports a context object
 
 export function AuthProvider({ children }) {
   const [user, setUser] = useState(null)
