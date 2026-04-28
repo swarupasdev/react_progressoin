@@ -1,5 +1,5 @@
 import { createContext, useState, useEffect } from "react"  //to build a global data channel
-
+//createContext -> create a shared channel
 
 // eslint-disable-next-line react-refresh/only-export-components
 export const AuthContext = createContext()  //Creates and exports a context object
