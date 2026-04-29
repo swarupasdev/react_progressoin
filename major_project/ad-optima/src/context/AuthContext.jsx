@@ -8,26 +8,30 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null)
   
   useEffect(() => {
-  const storedUser = localStorage.getItem("user")
+  const storedUser = localStorage.getItem("user")  //browser storage system
   if (storedUser) {
+    
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    setUser(JSON.parse(storedUser))
+    setUser(JSON.parse(storedUser))  //trigeers re-render with restored user
   }
 }, [])
 
-  function login(username) {
+//login function
+  function login(username) {   
   const userData = { name: username }
   setUser(userData)
-  localStorage.setItem("user", JSON.stringify(userData))
+  localStorage.setItem("user", JSON.stringify(userData))  //converts object to string 
 }
+
+//logout function 
   function logout() {
-  setUser(null)
+  setUser(null)  //clears react state 
   localStorage.removeItem("user")
 }
 
   return (
     <AuthContext.Provider value={{ user, login, logout }}>
-      {children}
+      {children}   //renders wrapped components
     </AuthContext.Provider>
   )
 }
