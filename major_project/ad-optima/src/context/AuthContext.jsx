@@ -1,7 +1,7 @@
 import { createContext, useState, useEffect } from "react"  //to build a global data channel
 //createContext -> create a shared channel
 
-
+//export makes this function available to other files
 export const AuthContext = createContext()  //Creates and exports a context object
 
 export function AuthProvider({ children }) {

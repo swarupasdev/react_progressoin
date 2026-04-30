@@ -5,7 +5,7 @@ import Home from "../pages/Home"
 import Login from "../pages/Login"
 import Signup from "../pages/Signup"
 import Dashboard from "../pages/Dashboard"
-//import CreateCampaign from "../pages/CreateCampaign"
+import CreateCampaign from "../pages/CreateCampaign"
 
 function AppRoutes() {
   return (
@@ -22,6 +22,12 @@ function AppRoutes() {
             }
           />
         </Route>
+        <Route
+          path="create"
+          element={
+            <ProtectedRoute><CreateCampaign /></ProtectedRoute>
+          }
+        />
       </Routes>
     </BrowserRouter>
   )
