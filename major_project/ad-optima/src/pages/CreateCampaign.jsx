@@ -7,12 +7,22 @@ function CreateCampaign() {
   function handleSubmit(e) {
     e.preventDefault()
 
-    const campaign = {
+    const newCampaign = {
+      id: Date.now(),
       title,
       budget,
+      impressions: 0,
+      clicks: 0
     }
 
-    console.log("Campaign Created:", campaign)
+    const existingCampaigns=
+      JSON.parse(localStorage.getItem("campaigns"))||[]
+    const updatedCampaigns=[...existingCampaigns,newCampaign]
+    localStorage.setItem(
+      "campaigns",
+      JSON.stringify(updatedCampaigns)
+    ) 
+    console.log("Campaign Created:", newCampaign)
 
     setTitle("")
     setBudget("")
