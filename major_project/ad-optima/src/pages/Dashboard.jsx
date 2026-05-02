@@ -7,6 +7,28 @@ function Dashboard() {
     const storedCampaigns =
       JSON.parse(localStorage.getItem("campaigns")) || []
 
+    //simulation engine 
+    //autoimpression and auto clicks generating for campaigns
+    const updatedCampaigns = storedCampaigns.map((campaign) => {
+    const impressions =
+      Math.floor(Math.random() * 1000) + 100
+
+    const clicks =
+      Math.floor(impressions * Math.random() * 0.2)
+
+    return {
+      ...campaign,
+      impressions,
+      clicks
+    }
+  })
+
+  localStorage.setItem(
+    "campaigns",
+    JSON.stringify(updatedCampaigns)
+  )
+
+
     setCampaigns(storedCampaigns)
   }, [])
 
