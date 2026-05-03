@@ -1,18 +1,18 @@
 import { createContext, useState, useEffect } from "react"  //to build a global data channel
 //createContext -> create a shared channel
+//useState -> stores dynamic data inside component
+//useEffect -> run side effects after render
+
 
 //export makes this function available to other files
 export const AuthContext = createContext()  //Creates and exports a context object
 
-export function AuthProvider({ children }) {
+export function AuthProvider({ children }) {  //whatever component are wrapped inside this provider
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(true)
   
-  useEffect(() => {
-  const storedUser = localStorage.getItem("user")  //browser storage system
+  useEffect(() => { const storedUser = localStorage.getItem("user")  //browser storage system
   if (storedUser) {
-    
-    
     setUser(JSON.parse(storedUser))  //trigeers re-render with restored user
   }
     setLoading(false)   //done loading
