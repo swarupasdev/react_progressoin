@@ -1,3 +1,5 @@
+// decides which page should open for which URL
+
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "../layouts/Layout"
 import ProtectedRoute from "./ProtectedRoute"
@@ -18,14 +20,19 @@ function AppRoutes() {
           <Route
             path="dashboard"
             element={
-              <ProtectedRoute><Dashboard /></ProtectedRoute>
+
+              <ProtectedRoute>
+                 <Dashboard />     {/*Dashboard under protected route*/}
+              </ProtectedRoute>
             }
           />
         </Route>
         <Route
           path="create"
           element={
-            <ProtectedRoute><CreateCampaign /></ProtectedRoute>
+            <ProtectedRoute>
+              <CreateCampaign/>    {/*CreateCampaign under protected route*/}
+            </ProtectedRoute>
           }
         />
       </Routes>
