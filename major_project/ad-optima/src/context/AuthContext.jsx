@@ -10,18 +10,22 @@ export const AuthContext = createContext()  //Creates and exports a context obje
 export function AuthProvider({ children }) {  //whatever component are wrapped inside this provider
   const [user, setUser] = useState(null)
   const [loading, setLoading] = useState(true)
+
+  //runs after everything,  side effects of rendering 
+    useEffect(() => { 
+      const storedUser = localStorage.getItem("user")  //browser storage system
   
-  useEffect(() => { const storedUser = localStorage.getItem("user")  //browser storage system
-  if (storedUser) {
-    setUser(JSON.parse(storedUser))  //trigeers re-render with restored user
-  }
-    setLoading(false)   //done loading
-  },[])
+      if (storedUser) { //if user exist 
+        setUser(JSON.parse(storedUser))  //trigeers re-render with restored user
+      }
+    
+      setLoading(false)   //loading is done so false value if not then true value 
+    },[])
 
 //login function
   function login(username) {   
   const userData = { name: username }
-  setUser(userData)
+  setUser(userData)  //update user state value
   localStorage.setItem("user", JSON.stringify(userData))  //converts object to string 
 }
 
@@ -31,7 +35,8 @@ export function AuthProvider({ children }) {  //whatever component are wrapped i
   localStorage.removeItem("user")
 }
 
-  return (
+  return ( // provider consumer inside context object
+    //provider = makes data avail to all comp. inside it
     <AuthContext.Provider value={{ user, login, logout, loading }}>
       {children}   {/*renders wrapped components*/}
     </AuthContext.Provider>
