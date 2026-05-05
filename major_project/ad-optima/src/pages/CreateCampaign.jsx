@@ -1,11 +1,10 @@
 import { useState } from "react"
-
 function CreateCampaign() {
   const [title, setTitle] = useState("")
   const [budget, setBudget] = useState("")
 
-  function handleSubmit(e) {
-    e.preventDefault()
+  function handleSubmit(e) {  //event object
+    e.preventDefault()   //prevent refresh after submission
 
     const newCampaign = {
       id: Date.now(),
@@ -16,16 +15,16 @@ function CreateCampaign() {
     }
 
     const existingCampaigns=
-      JSON.parse(localStorage.getItem("campaigns"))||[]
-    const updatedCampaigns=[...existingCampaigns,newCampaign]
+      JSON.parse(localStorage.getItem("campaigns"))||[]  //preventing null errors 
+    const updatedCampaigns=[...existingCampaigns,newCampaign]   //spread operator
     localStorage.setItem(
       "campaigns",
       JSON.stringify(updatedCampaigns)
     ) 
     console.log("Campaign Created:", newCampaign)
 
-    setTitle("")
-    setBudget("")
+    setTitle("")  //clears title input after create
+    setBudget("") //clears budjet input
   }
 
   return (
@@ -37,7 +36,7 @@ function CreateCampaign() {
           type="text"
           placeholder="Campaign Title"
           value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          onChange={(e) => setTitle(e.target.value)}  {/*captured typed text n updates state*/}
         />
 
         <input
